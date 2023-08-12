@@ -1,0 +1,164 @@
+@font-face {
+    font-family: ppmori;
+    src: url(PPMori-Book.woff2);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap');
+*
+{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+text-decoration: none;
+font-family: 'Poppins', sans-serif;
+}
+html,body
+{
+height: 100% ;
+width: 100%;
+}
+main{
+    width: 100%;
+    height: 200%;
+    position: relative;
+    background-color: #FFFFFF;
+}
+/* +++++++++++++++++++ navbar +++++++++++++++++++++++++++++++ */
+nav{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 0.5vh;
+}
+nav ul .gapleft1{
+
+display: flex;
+align-items: center;
+margin-right: 3vh;
+gap: 0.5vh;
+margin-left: 3vh;
+}
+.gapleft2{
+    display: flex;
+    align-items: center;
+    gap: 1vh;
+}
+li{
+    border:1px solid #c6c0c0;
+    border-radius: 50px;
+    padding: 0px 15px ;
+    
+}
+li:hover{
+    border-color: black;
+}
+li a{
+    color: #000;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+nav .logo{
+    font-size:1.5rem;
+    letter-spacing: 0.2rem;
+}
+.menu{
+    display: flex;
+    width: 100px;
+    height: 4vh;
+    border: 1px solid black;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    padding: 5px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background:linear-gradient(90deg,purple,green);
+    color: #fff;
+    
+}
+.display{
+    display: none;
+    position: fixed;
+    right: 0;
+    z-index: 9999;
+}
+.menu .para{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -100%;
+    transition: bottom 0.5s ease ;
+
+}
+ .menu p{
+    z-index: 999;
+    font-size: 1.4rem;
+}
+.menu:hover .para {
+background: linear-gradient(45deg,rgb(245, 238, 238),rgb(255, 250, 255));
+bottom: -1%;
+}
+
+/* +++++++++++++++++++++++++++ hero ++++++++++++++++++++++++++++ */
+
+.hero{
+    width: 100%;
+    padding: 4vh;
+    height: 80vh;
+    position: relative;
+    top: 6%;
+   
+}
+.hero .contant{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.hero .contant h1{
+    font-size: 8rem;
+    font-weight: 900;
+    font-family: ppmori;
+    line-height: 16.88125894134478vh;
+}
+.hero .contant .para{
+    margin-top: 2vh;
+}
+.para p{
+    font-weight: 600;
+    /* font-size: 15px; */
+}
+.mainpageimg{
+    overflow: hidden;
+}
+.page1{
+    width: 100%;
+    position: relative;
+    margin-top: 4%;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 10px;
+
+}
+img{
+    width: 40vh;
+    border-radius: 10px;
+}
+.page1 .imgone{
+    position: relative;
+    left: -10vh;
+}
